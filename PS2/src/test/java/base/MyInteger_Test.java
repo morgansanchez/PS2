@@ -8,11 +8,16 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import exceptions.DeckException;
+import pokerBase.Card;
+import pokerBase.Deck;
+
 public class MyInteger_Test {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
+
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
@@ -31,4 +36,36 @@ public class MyInteger_Test {
 		assertTrue(1==1);
 	}
 
-}
+	public void isEven() {
+		boolean ans = true;
+		boolean val;
+		double num= 6;
+
+		val = MyInteger.EvenNum(number) 
+
+				assertEquals(ans,val);
+
+		public void isOdd() {
+			boolean ans = true;
+			double number= 3;
+
+			val = MyInteger.EvenNum(number) 
+
+					boolean ans = true;
+			boolean val;
+			double num= 6;
+
+			val = MyInteger.EvenNum(num) 
+
+					assertEquals(ans,val);
+
+			public void isPrime() {
+				boolean ans = true;
+				boolean val;
+				double num= 1;
+
+				val = MyInteger.isPrime(num) 
+
+			}
+
+		}
