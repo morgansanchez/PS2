@@ -6,27 +6,30 @@ import java.util.Scanner;
 
 public class MyInteger {
 	//defines the name of the integer
-	int number;
+	private static int MyNumber;
 	
 		
 	
 
 		public MyInteger(int number) {
-				this.number = number;
+			MyNumber = number;
 	}
 
-
-		public static boolean isEven(int number) {
+		public int getInteger(){
+		
+		return MyNumber;
+		}
+		public static boolean isEven() {
 			// checks if even
-			if (number % 2 == 0){
+			if (MyNumber % 2 == 0){
 	            return true;
 	        }
 	        return false;
 		}
 		
-		public static boolean IsOdd(int number) {
+		public boolean IsOdd() {
 			// checks if odd
-			 if(number % 2 != 0){
+			 if(MyNumber % 2 != 0){
 	            return true;
 	        }
 	        return false;
@@ -35,31 +38,45 @@ public class MyInteger {
 		//check to see if prime
 	    public boolean isPrime() {
 	        int n = 0;
-	        for (n = 2; n <= number / 2; n++) {
-	            if (number % n != 0) {
+	        for (n = 2; n <= MyNumber / 2; n++) {
+	            if (MyNumber % n != 0) {
 	                return true;
 			}
 	      }
 	        return false;
-	       
-	          
-
+	                
 		} 
-	    public static boolean isPrime(MyInteger value) {
-	        return isPrime(value);
-	    }
-
-		public static boolean isEven(MyInteger value) {
-			return isPrime(value);
-	    }
-
-		public static boolean isOdd(MyInteger value) {
-			return isPrime(value);
-	    }
-
-}
 	    
-	    
+		// checks if myInterger is even
+		public static boolean isEven(MyInteger MyNumber) 
+		{
+			return MyInteger.isEven(MyNumber.getInteger());
+		}
+		// checks if myInterger is odd
+		public static boolean isOdd(MyInteger MyNumber) 
+		{
+			return MyInteger.isOdd(MyNumber.getInteger());
+		}
+		// checks if myInterger is prime
+		public static boolean isPrime(MyInteger MyNumber) 
+		{
+			return MyInteger.isPrime(MyNumber.getInteger());
+		}
+		// checks if they are equal
+		public boolean equals(int value) 
+		{
+			return iValue == value;
+		}
+		// checks if they are equal
+		public boolean equals(MyInteger MyNumber) 
+		{
+			return equals(MyNumber.getInteger());
+		}
+		
+		
+
+	}
+
 
 	    
 	

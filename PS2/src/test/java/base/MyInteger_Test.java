@@ -37,35 +37,24 @@ public class MyInteger_Test {
 	}
 
 	public void isEven() {
-		boolean ans = true;
-		boolean val;
-		double num= 6;
+		MyInteger one = new MyInteger(6);
+		MyInteger two = new MyInteger(5);
+		assertTrue(one.isEven());
+		assertFalse(two.isEven());
+	}
 
-		val = MyInteger.EvenNum(number) 
 
-				assertEquals(ans,val);
-
-		public void isOdd() {
-			boolean ans = true;
-			double number= 3;
-
-			val = MyInteger.EvenNum(number) 
-
-					boolean ans = true;
-			boolean val;
-			double num= 6;
-
-			val = MyInteger.EvenNum(num) 
-
-					assertEquals(ans,val);
-
-			public void isPrime() {
-				boolean ans = true;
-				boolean val;
-				double num= 1;
-
-				val = MyInteger.isPrime(num) 
-
-			}
-
-		}
+	public void isOdd() {
+		 MyInteger one = new MyInteger(5);
+		 MyInteger two = new MyInteger(6);
+		assertTrue(one.isOdd());
+		assertFalse(two.isOdd());
+	}
+	
+	public void isPrime() {
+		MyInteger one = new MyInteger(3);
+		MyInteger two = new MyInteger(4);
+		assertTrue(MyInteger.isPrime());
+		assertFalse(MyInteger.isPrime());
+	}
+}
