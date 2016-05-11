@@ -47,27 +47,22 @@ public class MyInteger {
 	                
 		} 
 	    
-		// checks if myInterger is even
+
 		public static boolean isEven(MyInteger MyNumber) 
 		{
 			return MyInteger.isEven(MyNumber.getInteger());
 		}
-		// checks if myInterger is odd
+	
 		public static boolean isOdd(MyInteger MyNumber) 
 		{
 			return MyInteger.isOdd(MyNumber.getInteger());
 		}
-		// checks if myInterger is prime
+
 		public static boolean isPrime(MyInteger MyNumber) 
 		{
 			return MyInteger.isPrime(MyNumber.getInteger());
 		}
-		// checks if they are equal
-		public boolean equals(int value) 
-		{
-			return iValue == value;
-		}
-		// checks if they are equal
+		
 		public boolean equals(MyInteger MyNumber) 
 		{
 			return equals(MyNumber.getInteger());
